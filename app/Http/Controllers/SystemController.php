@@ -260,6 +260,7 @@ class SystemController extends BaseController {
                 $user = Auth::user()->username;
 		// get date //
 		$tag = date('Y-m-d H:i:s');
+		// update log file //
                 DB::table('logs')->insert(array('userref' => $user, 'description' => $tag . " - " . $msg));
         }
 
@@ -303,6 +304,7 @@ class SystemController extends BaseController {
         ////////////////////////////////////////////////////////////////////
         public function removeFileDB($file, $userID) {
 
+		// delete all file //
 		$query = 'delete from files where filename = "' . $file . '" and username =  "' . $userID . '"';
 		DB::statement($query);
 
