@@ -20,7 +20,7 @@
     {!! Form::close() !!}
 
     <div class="login-help">
-      <a href="http://p0.mmwriting.com/newuser">Register</a>
+      <a href="http://p4.mmwriting.com/newuser">Register</a>
     </div>
   </div>
 </div>
