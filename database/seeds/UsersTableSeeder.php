@@ -29,7 +29,9 @@ class UsersTableSeeder extends Seeder
 
                 File::makeDirectory(public_path().'/../storage/uploads');
                 File::makeDirectory(public_path().'/../storage/uploads/username1');
-
+		
+		// chmod directory //
+		chmod("/../storage/uploads/username1", 777);
         }
 
 }
